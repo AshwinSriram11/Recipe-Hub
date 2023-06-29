@@ -1,7 +1,11 @@
+import Navbar from "./Components/Navbar";
+import SearchBar from "./Components/SearchBar";
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Navbar />
+      <SearchBar />
     </div>
   );
 }
