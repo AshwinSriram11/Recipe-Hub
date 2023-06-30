@@ -9,7 +9,7 @@ function HomePageRecipes() {
     const fetchRecipes = async () => {
       try {
         const Promises = [];
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 21; i++) {
           Promises.push(
             fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
           );
@@ -27,31 +27,29 @@ function HomePageRecipes() {
     if (!isFetched) {
       fetchRecipes();
     }
-    console.log(recipes);
   }, [isFetched]);
 
   return (
     <div>
-      <div className="text-center text-3xl font-serif font-medium text-teal-900 py-8">
-        <h1>Explore Recipes</h1>
-      </div>
-      <div>
-        {!recipes && (
-          <div>
-            <p>Loading....</p>
+      <div className="text-center text-4xl font-serif font-semibold ">
+        <h1 className="text-teal-900 py-8">Explore Recipes</h1>
+        {!isFetched && (
+          <div className="text-xl font-serif font-normal">
+            <p className="pt-8">Loading....</p>
           </div>
         )}
+      </div>
+      <div className="grid grid-cols-3 gap-24 px-4">
         {recipes &&
           recipes.map((recipe) => {
             return (
-              <div>
-                <Recipe
-                  imgThumb={recipe.strMealThumb}
-                  recipeName={recipe.strMeal}
-                  cuisine={recipe.strArea}
-                  category={recipe.strCategory}
-                />
-              </div>
+              <Recipe
+                id={Number(recipe.idMeal)}
+                imgThumb={recipe.strMealThumb}
+                recipeName={recipe.strMeal}
+                cuisine={recipe.strArea}
+                category={recipe.strCategory}
+              />
             );
           })}
       </div>
