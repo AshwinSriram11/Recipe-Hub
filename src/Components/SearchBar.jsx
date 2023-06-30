@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
+import HomePageRecipes from "./HomePageRecipes";
 
 function SearchBar() {
   const [searchInput, setSearchInput] = useState("");
@@ -44,7 +45,9 @@ function SearchBar() {
         </button>
       </div>
 
-      <div className="flex text-center flex-col-3">
+      <HomePageRecipes />
+
+      {/* <div className="flex text-center flex-col-3">
         {isLoading && <p>Loading.....</p>}
         {!isLoading && !recipe && (
           <div>
@@ -63,7 +66,7 @@ function SearchBar() {
               />
             );
           })}
-      </div>
+      </div> */}
     </div>
   );
 }
