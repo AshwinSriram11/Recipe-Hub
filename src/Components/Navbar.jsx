@@ -8,11 +8,6 @@ function Navbar() {
           <h1 className="pt-4 pb-4 pl-16 pr-4 tracking-wider text-teal-400 text-3xl font-sans  font-medium">
             Recipe-Hub
           </h1>
-          {/* <img
-            src="public\cooking.png"
-            alt="recipe"
-            className="mt-4 mx-8 w-[40px] h-[40px]"
-          /> */}
         </div>
         <div className="pt-5">
           <Link

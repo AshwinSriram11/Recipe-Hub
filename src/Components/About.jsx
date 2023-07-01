@@ -1,11 +1,11 @@
 function About() {
   return (
     <div>
-      <div className="mx-16 my-12">
+      <div className="mx-16 my-12 md:text-left text-center">
         <p className="text-center mb-4 text-teal-900 text-3xl font-sans font-semibold">
           Welcome to our recipe website!
         </p>
-        <p className="font-serif tracking-wide leading-8 text-xl my-4">
+        <p className="font-serif text-slate-500 tracking-wide leading-8 text-xl my-4">
           At our recipe website, we strive to provide you with a delightful
           culinary experience. Whether you're an experienced chef or a
           passionate home cook, our platform is designed to inspire and assist
@@ -21,14 +21,14 @@ function About() {
           and up-to-date information, ensuring that you have all the necessary
           details to recreate your favorite dishes with ease.
         </p>
-        <p className="font-serif tracking-wide leading-8 text-xl my-4">
+        <p className="font-serif text-slate-500 tracking-wide leading-8 text-xl my-4">
           With our user-friendly interface, you can search for recipes based on
           specific ingredients, dietary restrictions, or even explore new
           recipes for culinary adventures. Each recipe comes with detailed
           instructions, ingredient lists, and often includes helpful tips and
           tricks to enhance your cooking skills.
         </p>
-        <p className="font-serif tracking-wide leading-8 text-xl my-4">
+        <p className="font-serif text-slate-500 tracking-wide leading-8 text-xl my-4">
           Whether you're looking to impress your guests with a gourmet feast,
           prepare a quick and nutritious weeknight dinner, or simply explore new
           flavors, our recipe website is here to guide you on your culinary
