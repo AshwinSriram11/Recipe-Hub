@@ -15,7 +15,7 @@ function HomePageRecipes() {
           );
         }
         const res = await Promise.all(Promises);
-        const data = await Promise.all(res.map((response) => response.json()));
+        const data = await Promise.all(res.map((res) => res.json()));
         const recipeList = data.map((mealData) => mealData.meals[0]);
         setRecipes(recipeList);
         setIsFetched(true);
@@ -34,7 +34,7 @@ function HomePageRecipes() {
       <div className="text-center text-4xl font-serif font-semibold ">
         <h1 className="text-teal-900 py-8">Explore Recipes</h1>
         {!isFetched && (
-          <div className="text-xl font-serif font-normal">
+          <div className="text-xl font-normal">
             <p className="pt-8">Loading....</p>
           </div>
         )}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Recipe from "./Recipe";
 import HomePageRecipes from "./HomePageRecipes";
 

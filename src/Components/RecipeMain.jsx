@@ -19,7 +19,7 @@ function RecipeMain() {
       .catch((err) => {
         console.log("Error : ", err.message);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div>
@@ -160,7 +160,9 @@ function RecipeMain() {
         </div>
       </div>
       <div className="m-5 p-5 text-xl pl-8 py-5">
-        <p className=" ml-4 text-xl font-bold font-serif text-slate-950">Instructions</p>
+        <p className=" ml-4 text-xl font-bold font-serif text-slate-950">
+          Instructions
+        </p>
         <p className="ml-4 text-slate-500">{recipe.strInstructions}</p>
       </div>
     </div>
