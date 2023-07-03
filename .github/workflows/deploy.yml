@@ -1,0 +1,19 @@
+name: Your Deployment Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  CI: false
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Additional deployment steps here
