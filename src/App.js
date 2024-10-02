@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Components/About";
 import RecipeMain from "./Components/RecipeMain";
 import NotFound from "./Components/NotFound";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" Component={About} />
         <Route path="*" Component={NotFound} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
